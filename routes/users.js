@@ -6,19 +6,19 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/standard/:standardID', function(req, res, next) {
+router.get('/articles/:articlesID', function(req, res, next) {
   res.render('standard');
 });
 
-router.get('/thread/:threadID', function(req, res, next) {
+router.get('/question/:threadID', function(req, res, next) {
   res.render('thread');
 });
 
-router.get('/user/profile/:userID', function(req, res, next) {
+router.get('/profile/:userID', function(req, res, next) {
   res.render('profile');
 });
 
-router.get('/user/dashboard', function(req, res, next) {
+router.get('/dashboard', function(req, res, next) {
   res.render('dashboard');
 });
 
